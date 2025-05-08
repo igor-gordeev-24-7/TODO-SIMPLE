@@ -1,0 +1,13 @@
+@use '../../assets/styles/variables' as *;
+@use '../../assets/styles/mixins' as *;
+
+.todo-list{
+	&__ul {
+		width: 100%;
+		@include column-start;
+		gap: 20px;
+
+		overflow-y: auto;  
+	}
+
+}
