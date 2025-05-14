@@ -31,3 +31,36 @@
 		gap: 20px;
 	}
 }
+
+@media (max-width: 800px) {
+	.app {
+		padding: 0px 4%;
+			
+		&__filter{
+			width: 100%;
+			@include center;
+			gap: 20px;
+		}
+
+		&__heading {
+			font-size: 35px;
+			color: var(--color-text);
+		}
+	}
+}
+
+@media (max-width: 415px) {
+	.app {
+		&__filter{
+			gap: 3px;
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.app {
+		&__container{
+			padding: 30px 10px 10px 10px;
+		}
+	}
+}
